@@ -14,3 +14,12 @@ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2245318/
 https://diabetesatlas.org/atlas/tenth-edition/?dlmodal=active&dlsrc=https%3A%2F%2Fdiabetesatlas.org%2Fidfawp%2Fresource-files%2F2021%2F07%2FIDF_Atlas_10th_Edition_2021.pdf&dlmodal=active&dlsrc=
 https://en.wikipedia.org/wiki/Binary_classification
 https://en.wikipedia.org/wiki/Perceptron
+
+https://www.saedsayad.com/artificial_neural_network_bkp.htm#:~:text=A%20single%20layer%20perceptron%20(SLP,target%20(1%20%2C%200).
+
+https://cseweb.ucsd.edu//~yfreund/papers/LargeMarginsUsingPerceptron.pdf
+https://www.educba.com/single-layer-perceptron/
+
+https://web.archive.org/web/20190220024418id_/http://pdfs.semanticscholar.org/1e9c/83dfeccea30f27c27ef47d96f00751cfb506.pdf
+https://www.aitude.com/what-is-feed-forward-concept-in-machine-learning/#:~:text=based%20on%20this.-,A%20Feed%2DForward%20Neural%20Network%20is%20a%20single%20layer%20perceptron,the%20weighted%20input%20values%20together.
+

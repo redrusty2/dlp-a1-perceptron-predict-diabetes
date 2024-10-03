@@ -1,4 +1,36 @@
 \section{Method}
-\label{sec:formatting}
+\label{sec:method}
 
-Method.
+\subsection{Prediction}
+
+We have implemented a very simple version of the Single Layer Perceptron (SLP) algorithm.
+
+A SLP is a binary classifier which is a supervised machine learning algorithm. It is a binary classifier that takes in a vector of input features $\boldsymbol{x}$ and outputs a single value $y$ of 1 or 0 indicating which class the features belong to. 
+
+\begin{equation}
+\boldsymbol{x} = [x_1, x_2, \ldots, x_n]
+\label{eq:input_vector_x}
+\end{equation}
+
+There is a weight vector $\boldsymbol{w}$ which is the same length as the input vector $\boldsymbol{x}$, and is learned during the training phase.
+
+\begin{equation}
+  \boldsymbol{w} = [w_1, w_2, \ldots, w_n]
+  \label{eq:weight_vector_w}
+\end{equation}
+
+The output $y$ is determined by the decision function. The decision function is used to classify the input features into one of the classes. We initally use a basic binary classification decision function which takes the dot product of the inputs $\boldsymbol{x}$ and the weights $\boldsymbol{x}$ then passes this through an activation function. We use the sign function as the activation function.
+
+\begin{equation}
+  y = \text{sign}(\boldsymbol{x} \cdot \boldsymbol{w})
+  \label{eq:decision_function}
+\end{equation}
+
+
+\subsection{Training}
+
+Our initial implementation of the SLP training algorithm uses a feedforward method.
+
+We need a way to update the weights.
+
+We are given a training set of features with corresponding labels. For each sample in the training set we use the features to predict/caclulate $y$. We then compare the prediction with the correct label. We use an error/loss function to compute the loss/error which will help us update the weights. The loss is a metric to tell us how far away the prediction is from the correct output. Or at least it shows the "direction" we need to move the weights to get closer to the correct output.  
