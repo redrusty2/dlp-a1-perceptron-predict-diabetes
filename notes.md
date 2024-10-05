@@ -20,6 +20,7 @@ https://scikit-learn.org/stable/auto_examples/model_selection/plot_precision_rec
 https://medium.com/@douglaspsteen/precision-recall-curves-d32e5b290248
 https://stackoverflow.com/questions/29656550/how-to-plot-pr-curve-over-10-folds-of-cross-validation-in-scikit-learn
 https://stackoverflow.com/a/41104312
+https://pytorch.org/docs/stable/generated/torch.nn.BCELoss.html
 
 #### Writing
 
