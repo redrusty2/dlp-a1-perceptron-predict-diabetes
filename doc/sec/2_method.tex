@@ -98,9 +98,10 @@ Where
   \label{eq:recall}
 \end{equation}
 
-We will also use the ROC curve to compare model variations between each other. It will also show us how well the models are performing compared to a random classifier. 
+We will also use the precision-recall curve to compare model variations between each other. It will also show us how well the models are performing compared to a random classifier. A PR curve is used since it is more informative than the ROC curve when dealing with imbalanced datasets \cite{scikit_learn_precision_recall}. 
 
-We will construct the curve by using the results from stratified 8-fold cross-validation. Each point of the curve represents one cross-validation run. $k=8$ was chosen since it divides the dataset eqaully. With 768 samples we get 96 samples in each fold. Since the dataset is not balanced we use select each fold randomly but while maintaining the class distribution between folds \cite{Brownlee2023, Krasnoshchek2024, Brownlee2020_imbalanced}.
+
+We will construct the curve by using the results from stratified 8-fold cross-validation. The PR curve for each fold will be plotted as well as the mean plot curve. The area under the curve is also displayed. $k=8$ was chosen since it divides the dataset eqaully. With 768 samples we get 96 samples in each fold. Since the dataset is not balanced we use select each fold randomly but while maintaining the class distribution between folds \cite{Brownlee2023, Krasnoshchek2024, Brownlee2020_imbalanced, Psteen2020}.
 
 \subsection{Dataset}
 
@@ -109,5 +110,27 @@ There are 9 samples in the dataset that only have 8 features instead of 9. Since
 
 
 
+\section{Experiments}
+
+\subsection{Baseline}
+
+The results of the baseline model were actually not too bad. The mean accuracy was 0.75 and the mean F1 score was 0.62. The mean area under the PR curve was 0.68. 
+
+\subsection{Adding a bias term}
+
+Adding a bias term to the model was the simplest next step. The bias term is added as an extra weight the the weights vector. Then an additional input is added to the input vector which is always 1. Doing it this way lets it work wit hthe current baseline implementation other than adding the extra weight and input values.
+
+Adding a bias term in theory should let the model learn a better decision boundary as it lets the decision bounday move away from the origin.
+
+The results of adding the bias term were worse than the baseline which was surpising initially. The mean accuracy was 0.54 and the F1 score was 0.6. The mean area under the PR curve was 0.69 which was slightly better than the baseline but not by much.
+
+The recall was 0.99 and the precision was 0.43 suggesting that the model is overfitting to the positive class.
+
+\subsection{Added L2 Regularisation}
+
+Added L2 regularisation to attempt to reduce potential overfitting. But it did not help in this case. 
 
 
+\subsection{Training for recall}
+
+By accident we trained an incorrect model that only updated it's weights if the label was 1. This model performed ok, but when we corrected the implementation it performed worse. This showed that focussing on recall could be a good idea.
