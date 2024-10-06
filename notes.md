@@ -46,3 +46,6 @@ https://pages.cs.wisc.edu/%7Eboyd/aucpr_final.pdf
 https://pages.cs.wisc.edu/%7Ejdavis/davisgoadrichcamera2.pdf
 
 https://www.geeksforgeeks.org/ml-handling-missing-values/
+https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
+
+https://machinelearningmastery.com/tour-of-evaluation-metrics-for-imbalanced-classification/
