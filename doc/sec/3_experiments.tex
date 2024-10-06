@@ -1,3 +1,67 @@
 \section{Experiments}
 
 Experiments.
+
+
+% A SLP is a binary classifier which is a supervised machine learning algorithm. It is a binary classifier that takes in a vector of input features $\boldsymbol{x}$ and outputs a single value $y$ of 1 or 0 indicating which class the features belong to. 
+%
+% \begin{equation}
+% \boldsymbol{x} = [x_1, x_2, \ldots, x_n]
+% \label{eq:input_vector_x}
+% \end{equation}
+%
+% There is a weight vector $\boldsymbol{w}$ which is the same length as the input vector $\boldsymbol{x}$, and is learned during the training phase.
+%
+% \begin{equation}
+%   \boldsymbol{w} = [w_1, w_2, \ldots, w_n]
+%   \label{eq:weight_vector_w}
+% \end{equation}
+%
+% The output $y$ is determined by the decision function. The decision function is used to classify the input features into one of the classes. We initally use a basic binary classification decision function which takes the dot product of the inputs $\boldsymbol{x}$ and the weights $\boldsymbol{x}$ then passes this through an activation function. We use the sign function as the activation function.
+%
+% % Mention the bias term here.
+%
+% \begin{equation}
+%   y = \text{sign}(\boldsymbol{x} \cdot \boldsymbol{w})
+%   \label{eq:decision_function}
+% \end{equation}
+%
+%
+%
+% \subsection{Training}
+%
+% Our initial implementation of the SLP training algorithm uses a feedforward method.
+%
+% We need a way to update the weights.
+%
+% Given a training set of n samples $\{(\boldsymbol{x}_i, y_i)\}^{n}_{i=1}$
+%
+% First the weights are initialised to small random values. This is important because of the indicator function in the decision function will stop a weight from updating if it is 0. This is because 
+%
+% Now for each sample in the training set we make a prediciton $y^* = \text{sign}(\boldsymbol{x}_i \cdot \boldsymbol{w})$. We then use the prediction and the correct value to calculate the loss. The loss for each sample is given by 
+%
+% % $l_i = \max\{0, -y \langle \boldsymbol{x_i}, \boldsymbol{w} \rangle\}$.
+%
+% \begin{equation}
+%   l_i = \max\{0, -y_i \langle \boldsymbol{x_i}, \boldsymbol{w} \rangle\}
+%   \label{eq:loss}
+% \end{equation}
+%
+% The loss gives us a metric to tell us how far away the prediction is from the correct output. Or at least it shows the "direction" we need to move the weights to get closer to the correct output.
+%
+% We need to choose how much we want to update the weights(why?). To do this we use a hyperparameter called the learning rate $\eta$. The learning rate is a small positive number that we use to increase of decrease how much the weights are updated. \cite{Marsland2015}
+%
+% Now that we have the loss we can update the weights. Each weight can be updated using the following equation.
+%
+% \begin{equation}
+%   w_{i}^* = w_i - \eta \cdot l_i \cdot \boldsymbol{x}_i
+%   \label{eq:weight_update}
+% \end{equation}
+%
+% This process is rep
+%
+% We are given a training set of features with corresponding labels. For each sample in the training set we use the features to predict/caclulate $y$. We then compare the prediction with the correct label. We use an error/loss function to compute the loss/error which will help us update the weights. The loss is a metric to tell us how far away the prediction is from the correct output. Or at least it shows the "direction" we need to move the weights to get closer to the correct output.  
+%
+%
+% Initially we split the dataset into a training set and a test set with a 80/20 split. The samples for each set are chosen randomly. 
+%

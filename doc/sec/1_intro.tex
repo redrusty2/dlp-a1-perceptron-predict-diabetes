@@ -1,20 +1,12 @@
 \section{Introduction}
 \label{sec:intro}
 
-In 2021, it was estimated that 537 million people worldwide had diabetes, and this number was projected to increase to 643 million by 2030 and 783 million by 2045. It was also approximated that 45\% of people with diabetes, predominantly those with type 2 diabetes, were undiagnosed, highlighting an urgent need to improve diagnosis and provide timely care(IDF and cgpt).
+In 2021, it was estimated that 537 million people worldwide had diabetes, and this number was projected to increase to 643 million by 2030 and 783 million by 2045. It was also approximated that 45\% of people with diabetes, predominantly those with type 2 diabetes, were undiagnosed, highlighting an urgent need to improve diagnosis and provide timely care \cite{IDF_Atlas_10th_Edition}.
 
-Predicting diabetes is a binary classification problem. A binary classification is the process of categorising data into 2 classes.  
+Diabetes prediction is a binary classification problem, where the goal is to predict whether an individual has diabetes based on a set of features. 
 
-We will use the Pima Indians Diabetes dataset which has been used in many other papers to measure the performance of different algorithms
+The perceptron model is a supervised learning algorithm designed for linear classification. Although it has inherent limitations, such as the inability to model non-linearly separable data and the lack of probabilistic output, it remains a foundational algorithm in machine learning research.
 
-Before machnine learning, the most common approach to binary classification problems was to use statistical methods.
+There are many modern better-performing alternatives to the perceptron model, such as support vector machines, random forests, and deep learning models. The purpose of this paper is to evaluate the performance of the perceptron model on the Pima Indians Diabetes dataset.
 
-We will be measuring the performance of the perceptron model. The perceptron model is a supervised machine learning algorith for learning a linear classifier. 
-
-The previous approaches have been to use statistical methods, which require a lot of computational power. LDA and logistic regression are examples of these methods.
-
-What are some other downsides? hidden relationships. Bad with small datasets. underlying relationships not known. Complex interactions and intercorrelations among many features.
-
-Limitations of perceptron. Linearly separable data. No probabilistic output.
-
-There are many better ways to do this now. The purpose of this paper is to analyse the performance of the perceptron algorithm on the Pima Indians Diabetes dataset.
+Accompanying notebook is available at \url{https://github.com/redrusty2/dlp-a1-perceptron-predict-diabetes}.

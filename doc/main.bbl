@@ -5,25 +5,11 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem[Alpher(2002)]{Alpher02}
-FirstName Alpher.
-\newblock Frobnication.
-\newblock \emph{IEEE TPAMI}, 12\penalty0 (1):\penalty0 234--778, 2002.
-
-\bibitem[Alpher and Fotheringham-Smythe(2003)]{Alpher03}
-FirstName Alpher and FirstName Fotheringham-Smythe.
-\newblock Frobnication revisited.
-\newblock \emph{Journal of Foo}, 13\penalty0 (1):\penalty0 234--778, 2003.
-
-\bibitem[Alpher and Gamow(2005)]{Alpher05}
-FirstName Alpher and FirstName Gamow.
-\newblock Can a computer frobnicate?
-\newblock In \emph{CVPR}, pages 234--778, 2005.
-
-\bibitem[Alpher et~al.(2004)Alpher, Fotheringham-Smythe, and Gamow]{Alpher04}
-FirstName Alpher, FirstName Fotheringham-Smythe, and FirstName Gamow.
-\newblock Can a machine frobnicate?
-\newblock \emph{Journal of Foo}, 14\penalty0 (1):\penalty0 234--778, 2004.
+\bibitem[Abhinav(2023)]{Abhinav2023}
+Ravi Abhinav.
+\newblock Improving class imbalance with class weights in machine learning.
+\newblock \emph{Medium}, 2023.
+\newblock Accessed: 2024-10-03.
 
 \bibitem[Brownlee(2020)]{Brownlee2020_imbalanced}
 Jason Brownlee.
@@ -31,28 +17,41 @@ Jason Brownlee.
 \newblock \emph{Machine Learning Mastery}, 2020.
 \newblock Accessed: 2024-10-02.
 
+\bibitem[Brownlee(2021)]{Brownlee2020_imbalanced_metrics}
+Jason Brownlee.
+\newblock Tour of evaluation metrics for imbalanced classification.
+\newblock \emph{Machine Learning Mastery}, 2021.
+\newblock Accessed: 2024-10-03.
+
 \bibitem[Brownlee(2023)]{Brownlee2023}
 Jason Brownlee.
 \newblock A gentle introduction to k-fold cross-validation.
 \newblock \emph{Machine Learning Mastery}, 2023.
 \newblock Accessed: 2024-10-02.
 
+\bibitem[Federation(2021)]{IDF_Atlas_10th_Edition}
+International~Diabetes Federation.
+\newblock Idf diabetes atlas.
+\newblock \emph{International Diabetes Federation}, 2021.
+\newblock Accessed: 2024-10-03.
+
+\bibitem[GeeksforGeeks(2023)]{GFG_Data_Normalization}
+GeeksforGeeks.
+\newblock What is data normalization?
+\newblock \emph{GeeksforGeeks}, 2023.
+\newblock Accessed: 2024-10-03.
+
+\bibitem[GeeksforGeeks(2024)]{GFG_Missing_Values}
+GeeksforGeeks.
+\newblock Handling missing values.
+\newblock \emph{GeeksforGeeks}, 2024.
+\newblock Accessed: 2024-10-03.
+
 \bibitem[Krasnoshchek(2024)]{Krasnoshchek2024}
 Dmytro Krasnoshchek.
 \newblock Cross-validation in machine learning: How to do it right.
 \newblock \emph{Neptune.ai}, 2024.
 \newblock Accessed: 2024-10-02.
-
-\bibitem[LastName(2014{\natexlab{a}})]{Authors14}
-FirstName LastName.
-\newblock The frobnicatable foo filter, 2014{\natexlab{a}}.
-\newblock Face and Gesture submission ID 324. Supplied as supplemental material
-  {\tt fg324.pdf}.
-
-\bibitem[LastName(2014{\natexlab{b}})]{Authors14b}
-FirstName LastName.
-\newblock Frobnication tutorial, 2014{\natexlab{b}}.
-\newblock Supplied as supplemental material {\tt tr.pdf}.
 
 \bibitem[Marsland(2015)]{Marsland2015}
 Stephen Marsland.
@@ -65,10 +64,16 @@ Douglas Psteen.
 \newblock \emph{Medium}, 2020.
 \newblock Accessed: 2024-10-03.
 
-\bibitem[scikit learn()]{scikit_learn_precision_recall}
+\bibitem[Repository(2016)]{Kaggle_Pima_Indians}
+UCI Machine~Learning Repository.
+\newblock Pima indians diabetes database.
+\newblock \emph{Kaggle}, 2016.
+\newblock Accessed: 2024-10-03.
+
+\bibitem[scikit learn(2024)]{scikit_learn_precision_recall}
 scikit learn.
 \newblock Precision-recall for imbalanced datasets.
-\newblock \emph{scikit-learn}.
+\newblock \emph{scikit-learn}, 2024.
 \newblock Accessed: 2024-10-02.
 
 \end{thebibliography}
